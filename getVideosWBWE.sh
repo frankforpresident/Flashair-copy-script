@@ -11,7 +11,8 @@ for i in ${folders[@]}
 do
 
    echo "File" $i
-   DIR=($(echo $i | grep -o '"[0-9]*"' | sed -e 's/^"//' -e 's/"$//')); #sed -e workaround for [0-9*]
+   DIR=($(echo $i | grep -o '"[0-9]*"' | sed -e 's/^"//' -e 's/"$//')); #WD World Book World Edition II
+   #DIR=($(echo $i | grep -o '[0-9*]' # RASPBERRY PI
    echo "Dir:" $DIR;
    mkdir -p /shares/internal/CAM/$DIR/
 

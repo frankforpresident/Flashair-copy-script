@@ -9,6 +9,16 @@ Sinds there is no easy way to download from the flashair I created a bash script
 My script starts looking from {FLASHAIR_IP_ADDRESS}/VIDEO because that is the rootfolder where my camera is dropping the files. 
 
 
+Tree:
+root
+├── DCIM
+│      └── 100__TSB
+│   		      └──FA000001.JPG
+└── VIDEO
+		└── 20161111
+				   └── 123456.AVI
+
+
 Note: 
 My regex wasn't working on my WD worldbook but did work on my raspberry pi. I attached the other line below:
    
